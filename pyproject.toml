@@ -1,0 +1,20 @@
+[project]
+name = "qr-code-scanner"
+version = "0.1.0"
+description = "Quickly scan and open QR codes on your screen"
+readme = "README.md"
+authors = [
+    { name = "dar" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pillow>=11.2.1",
+    "pyzbar>=0.1.9",
+]
+
+[project.scripts]
+qr-code-scanner = "qr_code_scanner.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
